@@ -29,8 +29,9 @@ lab-x/
 ## Jak zobaczyć wyniki
 
 1. Wejdź na stronę GitHub Pages:
-   👉 https://twoj-login.github.io/piu-labs/
+   👉 [https://twoj-login.github.io/piu-labs/](https://artur-zuwala.github.io/piu-labs/)
 
 2. Wybierz laboratorium z listy.
 
 3. Możesz też otworzyć plik `index.html` lokalnie.
+
