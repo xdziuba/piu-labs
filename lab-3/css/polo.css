@@ -205,3 +205,53 @@ input[name='size']:checked + label {
   border: 3px solid #fff;
   box-shadow: 0 0 0 1px #000;
 }
+
+/* Animations */
+
+.p-img,
+.color-dot,
+.size-box,
+.add-to-cart,
+.p-title {
+  transition: all 0.25s ease;
+}
+
+.p-img:hover {
+  transform: scale(1.02);
+  box-shadow: 0 8px 18px rgba(0, 0, 0, 0.15);
+}
+
+.color-dot:hover {
+  transform: scale(1.2);
+}
+
+.add-to-cart:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.25);
+}
+
+.p-title:hover {
+  transform: rotate(-1deg) scale(1.05);
+}
+
+.size-box {
+  transition: all 0.25s ease;
+  transform-origin: center;
+}
+
+.size-box:hover {
+  transform: scale(1.15);
+  background: #f3f3f3;
+}
+
+input[name='size']:checked + label.size-box {
+  background: var(--color-primary);
+  color: white;
+  border-color: black;
+  transform: scale(1.25);
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.35);
+}
+
+input[name='size']:checked ~ label.size-box:not([for]) {
+  opacity: 0.6;
+}
