@@ -4,9 +4,37 @@
     <meta charset="UTF-8" />
     <title>Lab 4</title>
     <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/kanban.css" />
+    <script src="scripts/kanban.js" defer></script>
   </head>
+
   <body>
-    <h1>Lab 4</h1>
-    <a href="..">Powrót</a>
+    <h1>📋 Kanban</h1>
+
+    <div id="board">
+      <div class="column" data-column="todo">
+        <h2>🛫 Do zrobienia (<span class="count">0</span>)</h2>
+        <button class="add-card">Dodaj kartę</button>
+        <button class="colorize-column">Koloruj kolumnę</button>
+        <button class="sort-cards">Sortuj</button>
+        <div class="cards"></div>
+      </div>
+
+      <div class="column" data-column="doing">
+        <h2>✈️ W trakcie (<span class="count">0</span>)</h2>
+        <button class="add-card">Dodaj kartę</button>
+        <button class="colorize-column">Koloruj kolumnę</button>
+        <button class="sort-cards">Sortuj karty</button>
+        <div class="cards"></div>
+      </div>
+
+      <div class="column" data-column="done">
+        <h2>🛬 Zrobione (<span class="count">0</span>)</h2>
+        <button class="add-card">Dodaj kartę</button>
+        <button class="colorize-column">Koloruj kolumnę</button>
+        <button class="sort-cards">Sortuj</button>
+        <div class="cards"></div>
+      </div>
+    </div>
   </body>
 </html>
