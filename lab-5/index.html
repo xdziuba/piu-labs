@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="pl">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Lab 5</title>
+    <link rel="stylesheet" href="css/style.css" />
+    <script type="module" src="./app.js"></script>
+  </head>
+  <body>
+    <div class="controls">
+      <button id="add-square">Dodaj kwadrat</button>
+      <button id="add-circle">Dodaj kółko</button>
+
+      <label
+        >Kolor kwadratów:
+        <input type="color" id="color-square" value="#00aaff" />
+        <button id="apply-square-color">Zastosuj</button>
+      </label>
+
+      <label
+        >Kolor kółek:
+        <input type="color" id="color-circle" value="#ff7a00" />
+        <button id="apply-circle-color">Zastosuj</button>
+      </label>
+
+      <button id="clear-all" title="Usuń wszystkie kształty">
+        Wyczyść wszystko
+      </button>
+    </div>
+
+    <div id="shapes-container" class="shapes-area" aria-live="polite"></div>
+
+    <div class="counters">
+      <strong>Liczniki:</strong>
+      <span id="count-square">Kwadraty: 0</span> —
+      <span id="count-circle">Kółka: 0</span> —
+      <span id="count-total">Wszystkich: 0</span>
+    </div>
+  </body>
+</html>

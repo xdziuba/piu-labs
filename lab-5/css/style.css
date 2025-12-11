@@ -1,0 +1,78 @@
+body {
+  font-family: system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue',
+    Arial;
+  padding: 20px;
+}
+
+.controls {
+  display: flex;
+  gap: 12px;
+  flex-wrap: wrap;
+  margin-bottom: 16px;
+  align-items: center;
+}
+
+button {
+  padding: 8px 12px;
+  border-radius: 6px;
+  border: 1px solid #bbb;
+  background: #fff;
+  cursor: pointer;
+  transition: transform 0.15s ease, background-color 0.2s, box-shadow 0.2s;
+}
+
+button:hover {
+  background: #f2f2f2;
+  transform: translateY(-2px);
+  box-shadow: 0 3px 8px rgba(0, 0, 0, 0.15);
+}
+
+button:active {
+  transform: scale(0.95);
+}
+
+.shapes-area {
+  border: 1px dashed #ddd;
+  padding: 12px;
+  min-height: 120px;
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+  align-items: flex-start;
+}
+
+.shape {
+  width: 60px;
+  height: 60px;
+  display: inline-block;
+  cursor: pointer;
+  user-select: none;
+}
+
+.shape.square {
+  border-radius: 8px;
+}
+
+.shape.circle {
+  border-radius: 50%;
+}
+
+.counters {
+  margin-top: 12px;
+  font-size: 14px;
+}
+
+label {
+  font-size: 14px;
+  display: flex;
+  gap: 6px;
+  align-items: center;
+}
+
+input[type='color'] {
+  width: 40px;
+  height: 30px;
+  padding: 0;
+  border: none;
+  background: transparent;
+}
